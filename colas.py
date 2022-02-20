@@ -10,11 +10,11 @@ class Cola:
             self.tope += 1
             return self.lista
         else:
-            print("La lista esta llena")
+            print("La Cola esta llena")
             
     def pop(self):
         if self.empty():
-            return print("La lista está vacía")
+            return print("La Cola está vacía")
         else:
             top = self.lista [0]
             self.lista = self.lista [1:]
@@ -23,7 +23,7 @@ class Cola:
         
     def show(self):
         if self.empty():
-            print("Lista vacia")
+            print("Cola vacia")
         else:
             print("Cola"," "*5,"Posición")
             for pos,top in enumerate(self.lista):
@@ -51,9 +51,9 @@ class Cola:
                     la=True
                     break
             if la==True:
-                print("El número que ingresó se encuentra en la posición: {}".format(pos+1))
+                print("El número ingresado se encuentra en la posición: {}".format(pos+1))
             else:
-                print("El número que ingresó no se encuentra en la Pila")
+                print("El número ingresado no se encuentra en la Pila")
 
 
 # cola1=Cola (3)

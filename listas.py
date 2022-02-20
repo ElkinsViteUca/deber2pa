@@ -41,6 +41,7 @@ class Lista:
                 print("[{:}] {:9}".format(ele,pos))
                 
     def ingresarElemento(self,pos,elem):
+        pos=int(pos)
         if pos < 0 or pos > (len(self.lista)+1):
                return print("Posición incorrecta")
         else:    
@@ -67,10 +68,10 @@ class Lista:
                     op=True
                     break
             if op==True:
-                print("El número que ingresó se encuentra en la posición: {}".format(pos+1))
+                print("El dato ingresado se encuentra en la posición: {}".format(pos+1))
                 #print("El valor que ingreso se encuentra en la posicion: {}".format(pos+1))
             else:
-                print("El número que ingresó no se encuentra en la lista")
+                print("El dato ingresado no se encuentra en la lista")
     
 numeros=Lista()
 # numeros.push("Daniel")
